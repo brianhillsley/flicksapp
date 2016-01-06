@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		D0DDE07F1C3CD4DD00C4DC00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DDE07E1C3CD4DD00C4DC00 /* AppDelegate.swift */; };
-		D0DDE0811C3CD4DD00C4DC00 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DDE0801C3CD4DD00C4DC00 /* ViewController.swift */; };
 		D0DDE0841C3CD4DD00C4DC00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0DDE0821C3CD4DD00C4DC00 /* Main.storyboard */; };
 		D0DDE0861C3CD4DD00C4DC00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0DDE0851C3CD4DD00C4DC00 /* Assets.xcassets */; };
 		D0DDE0891C3CD4DD00C4DC00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0DDE0871C3CD4DD00C4DC00 /* LaunchScreen.storyboard */; };
-		D0DDE0941C3CD4DD00C4DC00 /* ReMovieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DDE0931C3CD4DD00C4DC00 /* ReMovieTests.swift */; };
-		D0DDE09F1C3CD4DD00C4DC00 /* ReMovieUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DDE09E1C3CD4DD00C4DC00 /* ReMovieUITests.swift */; };
+		D0DDE0AD1C3CDA2E00C4DC00 /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = D0DDE0AC1C3CDA2E00C4DC00 /* README.txt */; };
+		D0DDE0AF1C3CDCCA00C4DC00 /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DDE0AE1C3CDCCA00C4DC00 /* MoviesViewController.swift */; };
+		D0DDE0B21C3CEA8A00C4DC00 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DDE0B11C3CEA8A00C4DC00 /* MovieCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,17 +36,15 @@
 /* Begin PBXFileReference section */
 		D0DDE07B1C3CD4DD00C4DC00 /* ReMovie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReMovie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0DDE07E1C3CD4DD00C4DC00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D0DDE0801C3CD4DD00C4DC00 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D0DDE0831C3CD4DD00C4DC00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D0DDE0851C3CD4DD00C4DC00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D0DDE0881C3CD4DD00C4DC00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D0DDE08A1C3CD4DD00C4DC00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0DDE08F1C3CD4DD00C4DC00 /* ReMovieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReMovieTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D0DDE0931C3CD4DD00C4DC00 /* ReMovieTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReMovieTests.swift; sourceTree = "<group>"; };
-		D0DDE0951C3CD4DD00C4DC00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0DDE09A1C3CD4DD00C4DC00 /* ReMovieUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReMovieUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D0DDE09E1C3CD4DD00C4DC00 /* ReMovieUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReMovieUITests.swift; sourceTree = "<group>"; };
-		D0DDE0A01C3CD4DD00C4DC00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0DDE0AC1C3CDA2E00C4DC00 /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		D0DDE0AE1C3CDCCA00C4DC00 /* MoviesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
+		D0DDE0B11C3CEA8A00C4DC00 /* MovieCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,9 +75,8 @@
 		D0DDE0721C3CD4DD00C4DC00 = {
 			isa = PBXGroup;
 			children = (
+				D0DDE0AC1C3CDA2E00C4DC00 /* README.txt */,
 				D0DDE07D1C3CD4DD00C4DC00 /* ReMovie */,
-				D0DDE0921C3CD4DD00C4DC00 /* ReMovieTests */,
-				D0DDE09D1C3CD4DD00C4DC00 /* ReMovieUITests */,
 				D0DDE07C1C3CD4DD00C4DC00 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -97,8 +94,9 @@
 		D0DDE07D1C3CD4DD00C4DC00 /* ReMovie */ = {
 			isa = PBXGroup;
 			children = (
+				D0DDE0B31C3CEA9D00C4DC00 /* ViewControllers */,
+				D0DDE0B01C3CEA4F00C4DC00 /* Views */,
 				D0DDE07E1C3CD4DD00C4DC00 /* AppDelegate.swift */,
-				D0DDE0801C3CD4DD00C4DC00 /* ViewController.swift */,
 				D0DDE0821C3CD4DD00C4DC00 /* Main.storyboard */,
 				D0DDE0851C3CD4DD00C4DC00 /* Assets.xcassets */,
 				D0DDE0871C3CD4DD00C4DC00 /* LaunchScreen.storyboard */,
@@ -107,22 +105,20 @@
 			path = ReMovie;
 			sourceTree = "<group>";
 		};
-		D0DDE0921C3CD4DD00C4DC00 /* ReMovieTests */ = {
+		D0DDE0B01C3CEA4F00C4DC00 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				D0DDE0931C3CD4DD00C4DC00 /* ReMovieTests.swift */,
-				D0DDE0951C3CD4DD00C4DC00 /* Info.plist */,
+				D0DDE0B11C3CEA8A00C4DC00 /* MovieCell.swift */,
 			);
-			path = ReMovieTests;
+			name = Views;
 			sourceTree = "<group>";
 		};
-		D0DDE09D1C3CD4DD00C4DC00 /* ReMovieUITests */ = {
+		D0DDE0B31C3CEA9D00C4DC00 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				D0DDE09E1C3CD4DD00C4DC00 /* ReMovieUITests.swift */,
-				D0DDE0A01C3CD4DD00C4DC00 /* Info.plist */,
+				D0DDE0AE1C3CDCCA00C4DC00 /* MoviesViewController.swift */,
 			);
-			path = ReMovieUITests;
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +230,7 @@
 			files = (
 				D0DDE0891C3CD4DD00C4DC00 /* LaunchScreen.storyboard in Resources */,
 				D0DDE0861C3CD4DD00C4DC00 /* Assets.xcassets in Resources */,
+				D0DDE0AD1C3CDA2E00C4DC00 /* README.txt in Resources */,
 				D0DDE0841C3CD4DD00C4DC00 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,8 +256,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0DDE0811C3CD4DD00C4DC00 /* ViewController.swift in Sources */,
 				D0DDE07F1C3CD4DD00C4DC00 /* AppDelegate.swift in Sources */,
+				D0DDE0AF1C3CDCCA00C4DC00 /* MoviesViewController.swift in Sources */,
+				D0DDE0B21C3CEA8A00C4DC00 /* MovieCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +266,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0DDE0941C3CD4DD00C4DC00 /* ReMovieTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +273,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0DDE09F1C3CD4DD00C4DC00 /* ReMovieUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
