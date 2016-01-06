@@ -1,4 +1,4 @@
-# Project 1 - ReMov
+# Project 1 - ReMovie
 
 ReMov is a movies app using the [The Movie Database API](http://docs.themoviedb.apiary.io/#).
 
