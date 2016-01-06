@@ -4,9 +4,10 @@
 //
 //  Created by Brian Hillsley on 1/6/16.
 //  Copyright © 2016 codepath. All rights reserved.
-//
+
 
 import UIKit
+import AFNetworking
 
 class MoviesViewController: UIViewController , UITableViewDataSource, UITableViewDelegate {
     @IBOutlet weak var tableView: UITableView!
@@ -32,7 +33,12 @@ class MoviesViewController: UIViewController , UITableViewDataSource, UITableVie
         let movie = movies![indexPath.row]
         let title = movie["title"] as! String
         let overview = movie["overview"] as! String
+        let baseUrl = "http://image.tmdb.org/t/p/w500/" // width = 500
+        let posterPath = movie["poster_path"] as! String
         
+        let imgUrl = NSURL(string: baseUrl + posterPath)!
+        
+        cell.posterView.setImageWithURL(imgUrl)
         cell.titleLabel.text = title
         cell.overviewLabel.text = overview
         return cell
