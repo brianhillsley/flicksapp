@@ -11,6 +11,7 @@ import AFNetworking
 
 class MoviesViewController: UIViewController , UITableViewDataSource, UITableViewDelegate {
     @IBOutlet weak var tableView: UITableView!
+    var refreshControl: UIRefreshControl!
     
     var movies: [NSDictionary]? // might be nil
     
@@ -20,7 +21,7 @@ class MoviesViewController: UIViewController , UITableViewDataSource, UITableVie
         if let movies = movies {
             return movies.count
         }
-        return 0; // 20 roews
+        return 0;
     }
     
     // Row display. Implementers should *always* try to reuse cells by setting each cell's reuseIdentifier and querying for available reusable cells with dequeueReusableCellWithIdentifier:
