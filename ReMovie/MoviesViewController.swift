@@ -36,11 +36,13 @@ class MoviesViewController: UIViewController , UITableViewDataSource, UITableVie
         let title = movie["title"] as! String
         let overview = movie["overview"] as! String
         let baseUrl = "http://image.tmdb.org/t/p/w500/" // width = 500
-        let posterPath = movie["poster_path"] as! String
+        if let posterPath = movie["poster_path"] as? String {
         
-        let imgUrl = NSURL(string: baseUrl + posterPath)!
+            let imgUrl = NSURL(string: baseUrl + posterPath)!
         
-        cell.posterView.setImageWithURL(imgUrl)
+            cell.posterView.setImageWithURL(imgUrl)
+        }
+        
         cell.titleLabel.text = title
         cell.overviewLabel.text = overview
         return cell
@@ -56,7 +58,7 @@ class MoviesViewController: UIViewController , UITableViewDataSource, UITableVie
     }
     
     func onRefresh() {
-        delay(2, closure: {
+        delay(1, closure: {
             self.refreshControl.endRefreshing()
         })
     }
@@ -123,7 +125,7 @@ class MoviesViewController: UIViewController , UITableViewDataSource, UITableVie
     }
 
     override func viewDidAppear(animated: Bool) {
-        EZLoadingActivity.showWithDelay("Loading...", disableUI: false, seconds: 0.75) // Loading
+        EZLoadingActivity.showWithDelay("Loading...", disableUI: false, seconds: 0.5) // Loading
     }
     
     override func didReceiveMemoryWarning() {
@@ -132,14 +134,26 @@ class MoviesViewController: UIViewController , UITableViewDataSource, UITableVie
     }
     
 
-    /*
+
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        
+        // WHICH CELL WAS CLICKED?
+        let cell = sender as! UITableViewCell
+        let indexPath = tableView.indexPathForCell(cell)
+        
+        // movie is the one that was clicked
+        let movie = movies![indexPath!.row]
+        
+        let detailVC = segue.destinationViewController as! DetailViewController
+        detailVC.movie = movie
+        
+        print("MovieViewController: prepareForSegue")
     }
-    */
+
 
 }

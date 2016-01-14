@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2D76220AD929C45036CFD673 /* Pods_ReMovie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DD5E84277FC2C45F2EC57D4 /* Pods_ReMovie.framework */; };
+		D07626AE1C47433700BC1060 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D07626AD1C47433700BC1060 /* DetailViewController.swift */; };
 		D0DDE07F1C3CD4DD00C4DC00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DDE07E1C3CD4DD00C4DC00 /* AppDelegate.swift */; };
 		D0DDE0841C3CD4DD00C4DC00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0DDE0821C3CD4DD00C4DC00 /* Main.storyboard */; };
 		D0DDE0861C3CD4DD00C4DC00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0DDE0851C3CD4DD00C4DC00 /* Assets.xcassets */; };
@@ -38,6 +39,7 @@
 		1DD5E84277FC2C45F2EC57D4 /* Pods_ReMovie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReMovie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3137973CBB640F72E3C3E6E5 /* Pods-ReMovie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReMovie.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReMovie/Pods-ReMovie.release.xcconfig"; sourceTree = "<group>"; };
 		C54BB45968E90D9B186B6111 /* Pods-ReMovie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReMovie.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReMovie/Pods-ReMovie.debug.xcconfig"; sourceTree = "<group>"; };
+		D07626AD1C47433700BC1060 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		D0DDE07B1C3CD4DD00C4DC00 /* ReMovie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReMovie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0DDE07E1C3CD4DD00C4DC00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0DDE0831C3CD4DD00C4DC00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				D0DDE0AE1C3CDCCA00C4DC00 /* MoviesViewController.swift */,
+				D07626AD1C47433700BC1060 /* DetailViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -334,6 +337,7 @@
 				D0DDE07F1C3CD4DD00C4DC00 /* AppDelegate.swift in Sources */,
 				D0DDE0AF1C3CDCCA00C4DC00 /* MoviesViewController.swift in Sources */,
 				D0DDE0B21C3CEA8A00C4DC00 /* MovieCell.swift in Sources */,
+				D07626AE1C47433700BC1060 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
